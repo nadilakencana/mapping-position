@@ -1,0 +1,216 @@
+body{
+    background-color: rgb(24, 24, 24);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image:repeating-linear-gradient(
+        to right,
+        transparent 0 50px,
+        #fff1 50px 51px
+    ),
+    repeating-linear-gradient(
+        to bottom,
+        transparent 0 50px,
+        #fff1 50px 51px
+    );
+    position: relative;
+}
+#target{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.position-dot{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    background-color: white;
+    border-radius: 20px;
+    width: 20px;
+    height: 20px;
+    color: black;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 0 15px 8px rgba(22, 22, 22, 0.5);
+    top: 203px;
+    left: 91px;
+    z-index: 100;
+}
+.position-dot .position-detail{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    width: auto;
+    height: 57px;
+    padding: 7px;
+    color: black;
+    margin: 9px;
+    font-size: 13px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 10px 8px rgba(22, 22, 22, 0.5);
+    top: -91px;
+    left: -19px;
+  
+
+}
+.position-dot .position-detail::before{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 10px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid white;
+    bottom: -22px;
+    left: 15%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+
+}
+.position-detail .header-detail {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    align-items: center;
+}
+.position-detail .header-detail .text-header {
+    margin: 0;
+    padding: 0;
+}
+.position-detail .header-detail .close{
+    font-family: cursive;
+    font-size: large;
+    cursor: pointer;
+    font-weight: 900;
+}
+.position-detail .detail {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 7px;
+}
+.detail .text-detail-y, .text-detail-x {
+    width: 45px;
+}
+.detail .btn-create-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.detail .create-img {
+    background: #4f9cdf;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    width: 36px;
+    padding: 5px;
+    box-shadow: 0 5px 8px rgba(22, 22, 22, 0.5);
+}
+.hidden{
+    display: none !important;
+}
+.pop-up-create-image {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+    width: max-content;
+    height: max-content;
+    padding: 10px;
+    box-shadow: 0 10px 8px rgba(22, 22, 22, 0.5);
+}
+.header-popup {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 5px;
+}
+p.text-header-popup {
+    margin: 0;
+    padding: 0;
+}
+
+span.close-popup {
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.content-popup {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.card-upload {
+    position: relative;
+    border: dashed 2px #353535c2;
+    border-radius: 11px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-upload .text {
+    font-size: 11px;
+    color: #6b6a6a;
+    position: relative;
+}
+.card-upload .file-name {
+    position: absolute;
+    top: 86%;
+    font-size: 10px;
+}
+.btn-submit {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 21px;
+
+}
+button.submit-img {
+    background: rgb(24, 87, 124);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    cursor: pointer;
+    box-shadow: 0 5px 8px rgba(22, 22, 22, 0.5);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#target .map{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    position: relative;
+}
+
+#target .map img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    image-resolution: from-image;
+    background-position: center;
+}
